@@ -1,0 +1,111 @@
+{
+  "sources": [
+    {
+      "name": "halo_loop",
+      "source": "https://fittrain.github.io/HaloLoop.stl"
+    },
+    {
+      "name": "pilar",
+      "source": "https://fittrain.github.io/Pilar2400.stl"
+    },
+    {
+      "name": "pilar_base",
+      "source": "https://fittrain.github.io/PilarBase.stl"
+    }
+  ],
+  "prefabs": [
+    {
+      "name": "halo_loop",
+      "source": "halo_loop",
+      "rotation": "0:0:25"
+    },
+    {
+      "name": "pilar",
+      "source": "pilar",
+      "connections": ["0:480:0", "0:598:0", "0:716:0", "0:834:0", "0:952:0", "0:1070:0", "0:1188:0", "0:1306:0", "0:1424:0", "0:1542:0"],
+      "rotation": "0:90:0",
+      "children": [
+        {
+          "name": "halo_loop_0",
+          "prefab": "halo_loop",
+          "positions": [0]
+        },
+        {
+          "name": "halo_loop_1",
+          "prefab": "halo_loop",
+          "positions": [1]
+        },
+        {
+          "name": "halo_loop_2",
+          "prefab": "halo_loop",
+          "positions": [2]
+        },
+        {
+          "name": "halo_loop_3",
+          "prefab": "halo_loop",
+          "positions": [3]
+        },
+        {
+          "name": "halo_loop_4",
+          "prefab": "halo_loop",
+          "positions": [4]
+        },
+        {
+          "name": "halo_loop_5",
+          "prefab": "halo_loop",
+          "positions": [5]
+        },
+        {
+          "name": "halo_loop_6",
+          "prefab": "halo_loop",
+          "positions": [6]
+        },
+        {
+          "name": "halo_loop_7",
+          "prefab": "halo_loop",
+          "positions": [7]
+        },
+        {
+          "name": "halo_loop_8",
+          "prefab": "halo_loop",
+          "positions": [8]
+        },
+        {
+          "name": "halo_loop_9",
+          "prefab": "halo_loop",
+          "positions": [9]
+        }
+      ]
+    },
+    {
+      "name": "pilar_base",
+      "source": "pilar_base",
+      "connections": ["0:0:0"],
+      "scale": "0.01:0.01:0.01",
+      "children": [
+        {
+          "name": "pilar",
+          "prefab": "pilar",
+          "positions": [0]
+        }
+      ]
+    }
+  ],
+  "root": {
+    "name": "Root",
+    "connections": ["5:0:0", "-5:0:0"],
+    "children": [
+      {
+        "name": "pilar_0",
+        "prefab": "pilar_base",
+        "positions": [0],
+        "color": [0, 255, 0, 1]
+      },
+      {
+        "name": "pilar_1",
+        "prefab": "pilar_base",
+        "positions": [1]
+      }
+    ]
+  }
+}
