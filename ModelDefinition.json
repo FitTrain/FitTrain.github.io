@@ -81,6 +81,7 @@
       "name": "pilar_base",
       "source": "pilar_base",
       "connections": ["0:0:0"],
+      "scale": "0.01:0.01:0.01",
       "children": [
         {
           "name": "pilar",
