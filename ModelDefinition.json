@@ -11,6 +11,14 @@
     {
       "name": "pilar_base",
       "source": "https://fittrain.github.io/PilarBase.stl"
+    },
+    {
+      "name": "pilar_link",
+      "source": "https://fittrain.github.io/PilarLink.stl"
+    },
+    {
+      "name": "gryf",
+      "source": "https://fittrain.github.io/Gryf220.stl"
     }
   ],
   "prefabs": [
@@ -22,8 +30,8 @@
     {
       "name": "pilar",
       "source": "pilar",
+      "color": [255, 215, 0, 1],
       "connections": ["0:480:0", "0:598:0", "0:716:0", "0:834:0", "0:952:0", "0:1070:0", "0:1188:0", "0:1306:0", "0:1424:0", "0:1542:0"],
-      "rotation": "0:90:0",
       "children": [
         {
           "name": "halo_loop_0",
@@ -81,7 +89,6 @@
       "name": "pilar_base",
       "source": "pilar_base",
       "connections": ["0:0:0"],
-      "scale": "0.01:0.01:0.01",
       "children": [
         {
           "name": "pilar",
@@ -89,22 +96,45 @@
           "positions": [0]
         }
       ]
+    },
+    {
+      "name": "gryf",
+      "source": "gryf"
+    },
+    {
+      "name": "pilar_link",
+      "source": "pilar_link",
+      "connections": ["0:0:540", "0:0:-540", "0:12:0"],
+      "rotation": "0:90:0",
+      "color": [128, 128, 128, 0],
+      "children": [
+        {
+          "name": "pilar_0",
+          "prefab": "pilar_base",
+          "positions": [0]
+        },
+        {
+          "name": "pilar_1",
+          "prefab": "pilar_base",
+          "positions": [1]
+        },
+        {
+          "name": "gryf_0",
+          "prefab": "gryf",
+          "positions": [2]
+        }
+      ]
     }
   ],
   "root": {
     "name": "Root",
-    "connections": ["5:0:0", "-5:0:0"],
+    "scale": "0.01:0.01:0.01",
+    "connections": ["0:-1200:0"],
     "children": [
       {
-        "name": "pilar_0",
-        "prefab": "pilar_base",
-        "positions": [0],
-        "color": [0, 255, 0, 1]
-      },
-      {
-        "name": "pilar_1",
-        "prefab": "pilar_base",
-        "positions": [1]
+        "name": "pilar_link_0",
+        "prefab": "pilar_link",
+        "positions": [0]
       }
     ]
   }
