@@ -19,9 +19,17 @@
     {
       "name": "gryf",
       "source": "https://fittrain.github.io/Gryf220.stl"
+    },
+    {
+      "name": "wall_link",
+      "source": "https://fittrain.github.io/WallLink.stl"
     }
   ],
   "prefabs": [
+    {
+      "name": "wall_link",
+      "source": "wall_link"
+    },
     {
       "name": "halo_loop",
       "source": "halo_loop",
@@ -31,7 +39,7 @@
       "name": "pilar",
       "source": "pilar",
       "color": [255, 215, 0, 1],
-      "connections": ["0:480:0", "0:598:0", "0:716:0", "0:834:0", "0:952:0", "0:1070:0", "0:1188:0", "0:1306:0", "0:1424:0", "0:1542:0"],
+      "connections": ["0:480:540", "0:598:540", "0:716:540", "0:834:540", "0:952:540", "0:1070:540", "0:1188:540", "0:1306:540", "0:1424:540", "0:1542:540", "0:14:0"],
       "children": [
         {
           "name": "halo_loop_0",
@@ -82,13 +90,19 @@
           "name": "halo_loop_9",
           "prefab": "halo_loop",
           "positions": [9]
+        },
+        {
+          "name": "wall_link",
+          "prefab": "wall_link",
+          "positions": [10],
+          "color": [128, 128, 128, 0]
         }
       ]
     },
     {
       "name": "pilar_base",
       "source": "pilar_base",
-      "connections": ["0:0:0"],
+      "connections": ["0:0:-540"],
       "children": [
         {
           "name": "pilar",
