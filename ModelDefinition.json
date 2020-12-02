@@ -27,19 +27,30 @@
   ],
   "prefabs": [
     {
+      "name": "wall",
+      "primitive": "plane"
+    },
+    {
+      "name": "floor",
+      "primitive": "plane",
+    },
+    {
       "name": "wall_link",
-      "source": "wall_link"
+      "source": "wall_link",
+      "tooltip": "Tooltip sample description"
     },
     {
       "name": "halo_loop",
       "source": "halo_loop",
-      "rotation": "0:0:25"
+      "rotation": "0:0:25",
+      "tooltip": "Halo Loop sample description"
     },
     {
       "name": "pilar",
       "source": "pilar",
       "color": [255, 215, 0, 1],
-      "connections": ["0:480:540", "0:598:540", "0:716:540", "0:834:540", "0:952:540", "0:1070:540", "0:1188:540", "0:1306:540", "0:1424:540", "0:1542:540", "0:14:0"],
+      "connections": ["0:480:540", "0:598:540", "0:716:540", "0:834:540", "0:952:540", "0:1070:540", "0:1188:540", "0:1306:540", "0:1424:540", "0:1542:540", "0:0:0"],
+      "tooltip": "Pilar sample description",
       "children": [
         {
           "name": "halo_loop_0",
@@ -103,6 +114,7 @@
       "name": "pilar_base",
       "source": "pilar_base",
       "connections": ["0:0:-540"],
+      "tooltip": "Pilar Base sample tooltip",
       "children": [
         {
           "name": "pilar",
@@ -113,13 +125,15 @@
     },
     {
       "name": "gryf",
-      "source": "gryf"
+      "source": "gryf",
+      "tooltip": "Gryf sample tooltip"
     },
     {
       "name": "pilar_link",
       "source": "pilar_link",
-      "connections": ["0:0:540", "0:0:-540", "0:12:0"],
+      "connections": ["0:0:540", "0:0:-540", "0:12:0", "-468:1200:0", "0:0:0"],
       "rotation": "0:90:0",
+      "tooltip": "Pilar Link sample tooltip",
       "color": [128, 128, 128, 0],
       "children": [
         {
@@ -136,6 +150,20 @@
           "name": "gryf_0",
           "prefab": "gryf",
           "positions": [2]
+        },
+        {
+          "name": "wall",
+          "prefab": "wall",
+          "rotation": "0:0:-90",
+          "scale": "300:1:385",
+          "color": [169, 169, 169, 0],
+          "positions": [3]
+        },
+        {
+          "name": "floor",
+          "prefab": "floor",
+          "scale": "400:1:400",
+          "positions": [4]
         }
       ]
     }
