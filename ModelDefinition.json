@@ -131,7 +131,7 @@
     {
       "name": "pilar_link",
       "source": "pilar_link",
-      "connections": ["0:0:540", "0:0:-540", "0:12:0", "-468:1200:0", "0:0:0"],
+      "connections": ["0:0:540", "0:0:-540", "0:12:0", "-468:1500:0", "1530:0:0"],
       "rotation": "0:90:0",
       "tooltip": "Pilar Link sample tooltip",
       "color": [128, 128, 128, 0],
@@ -162,7 +162,7 @@
         {
           "name": "floor",
           "prefab": "floor",
-          "scale": "400:1:400",
+          "scale": "400:1:385",
           "positions": [4]
         }
       ]
