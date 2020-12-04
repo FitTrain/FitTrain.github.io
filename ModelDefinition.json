@@ -32,7 +32,7 @@
     },
     {
       "name": "floor",
-      "primitive": "plane",
+      "primitive": "plane"
     },
     {
       "name": "wall_link",
