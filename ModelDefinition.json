@@ -37,7 +37,7 @@
     {
       "name": "wall_link",
       "source": "wall_link",
-      "tooltip": "Tooltip sample description"
+      "tooltip": "Wall link - available lengths\n400mm, 500mm"
     },
     {
       "name": "halo_loop",
