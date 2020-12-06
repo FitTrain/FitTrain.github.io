@@ -37,7 +37,7 @@
     {
       "name": "wall_link",
       "source": "wall_link",
-      "tooltip": "Wall link - available lengths\n400mm, 500mm"
+      "tooltip": "Wall link\navailable lengths: 400mm, 500mm"
     },
     {
       "name": "halo_loop",
@@ -55,6 +55,7 @@
         {
           "name": "halo_loop_0",
           "prefab": "halo_loop",
+          "tooltip": "Iron Halo System\nLevel: 0",
           "positions": [0]
         },
         {
