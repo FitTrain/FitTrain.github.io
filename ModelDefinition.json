@@ -1,10 +1,6 @@
 {
   "sources": [
     {
-      "name": "bench",
-      "source": "https://fittrain.github.io/Bench.stl"
-    },
-    {
       "name": "halo_loop",
       "source": "https://fittrain.github.io/HaloLoop.stl"
     },
