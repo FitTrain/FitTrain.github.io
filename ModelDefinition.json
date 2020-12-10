@@ -1,9 +1,4 @@
 {
-  "environment": {
-    "camera": {
-      "position": "0:0:0"
-    }
-  },
   "sources": [
     {
       "name": "halo_loop",
