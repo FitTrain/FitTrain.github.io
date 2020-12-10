@@ -116,6 +116,7 @@
       "source": "pilar_base",
       "connections": ["0:0:-540"],
       "tooltip": "Pilar Base sample tooltip",
+      "color": [255, 215, 0, 1],
       "children": [
         {
           "name": "pilar",
