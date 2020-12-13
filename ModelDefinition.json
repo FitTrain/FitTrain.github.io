@@ -23,6 +23,10 @@
     {
       "name": "wall_link",
       "source": "https://fittrain.github.io/WallLink.stl"
+    },
+    {
+      "name": "front_arm",
+      "source": "https://fittrain.github.io/FrontArm.stl"
     }
   ],
   "prefabs": [
@@ -40,6 +44,11 @@
       "tooltip": "Wall link\navailable lengths: 400mm, 500mm"
     },
     {
+      "name": "front_arm",
+      "source": "front_arm",
+      "tooltip": "7 grip front mounting arm"
+    },
+    {
       "name": "halo_loop",
       "source": "halo_loop",
       "rotation": "0:0:25",
@@ -49,7 +58,7 @@
       "name": "pilar",
       "source": "pilar",
       "color": [255, 215, 0, 1],
-      "connections": ["0:480:540", "0:598:540", "0:716:540", "0:834:540", "0:952:540", "0:1070:540", "0:1188:540", "0:1306:540", "0:1424:540", "0:1542:540", "0:0:0"],
+      "connections": ["0:480:540", "0:598:540", "0:716:540", "0:834:540", "0:952:540", "0:1070:540", "0:1188:540", "0:1306:540", "0:1424:540", "0:1542:540", "0:0:0", "0:2350:0"],
       "tooltip": "Pilar sample description",
       "children": [
         {
@@ -108,6 +117,12 @@
           "prefab": "wall_link",
           "positions": [10],
           "color": [128, 128, 128, 0]
+        },
+        {
+          "name": "front_arm",
+          "prefab": "front_arm",
+          "positions": [11],
+          "color": [255, 162, 0, 0]
         }
       ]
     },
@@ -158,7 +173,7 @@
           "prefab": "wall",
           "rotation": "0:0:-90",
           "scale": "300:1:385",
-          "color": [169, 169, 169, 0],
+          "color": [249, 247, 241, 1],
           "positions": [3]
         },
         {
